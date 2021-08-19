@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Kathleen Baker's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="bl-styles/portal.css" />
+  <link rel="stylesheet" href="bl-styles/nav.css" />
+  <link rel="stylesheet" href="bl-styles/shop.css" />
+ </head>
+ <body>
+     <header>
+      <a class="topheader" href="index.html">
+        <h1>Big Leather</h1>
+       </a>
+     <nav class="topnav" id="myTopnav">
+      <a href="index.html" class="active">home</a>
+      <a href="music.html">music</a>
+      <a href="shop.html">shop</a>
+      <a href="art.html">gallery</a>
+      <a href="about.html">about page</a>
+      <a href="showschedule.html">show schedule</a>
+      <a href="contact.php">contact Big Leather</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+
+     <div class="iconlist">
+      <a href="https://www.instagram.com/_bigleather_/" target="_blank">
+        <img class="icon" src="bl-images/insta-logo.png" alt="Instagram icon"/>
+       </a>
+      <a href="https://bigleather.bandcamp.com/" target="_blank">
+        <img class="icon" src="bl-images/bc-logo.png" alt="BandCamp icon"/>
+       </a>
+      <a href="https://open.spotify.com/artist/6xF7J1fNTVVRgd7beuhwhL?si=8vDi4eqFTGakwZiLHBUkGA&dl_branch=1" target="_blank">
+        <img class="icon" src="bl-images/spotify-logo.png" alt="Spotify icon"/>
+       </a>
+    </div>
+
+   <div class="wrapper">
+       <h2 class="page-header">Shop Albums</h2>
+       <p class="page-caption">Welcome to our album shop! Please click the album you would like to purchase to be directed to Bandcamp's purchasing options.</p>
+       
+       <a href="https://bigleather.bandcamp.com/track/bones-2021-remaster" target="_blank">
+        <img id="bones" class="shopart" src="bl-images/bones.jpeg" alt="Image of album Bones' cover art."/>
+       </a>
+       <a href="https://bigleather.bandcamp.com/track/im-not-so-dumb" target="_blank">
+        <img id="dumb" class="shopart" src="bl-images/dumb.jpeg" alt="Image of album I'm Not So Dumb's cover art."/>
+       </a>
+       <a href="https://bigleather.bandcamp.com/track/the-ribbon" target="_blank">
+        <img id="ribbon" class="shopart" src="bl-images/ribbon.jpeg" alt="Image of album The Ribbon's cover art."/>
+       </a>
+       <a href="https://bigleather.bandcamp.com/album/a-night-with-big-leather" target="_blank">
+        <img id="night" class="shopart" src="bl-images/night.jpeg" alt="Image of album A Night With Big Leather's cover art."/>
+       </a>
+       <a href="https://bigleather.bandcamp.com/album/seed-ep" target="_blank">
+        <img id="seed-ep" class="shopart" src="bl-images/seed.jpeg" alt="Image of EP album Seed's cover art."/>
+       </a>
+       <a href="https://bigleather.bandcamp.com/track/in-sleep-demo" target="_blank">
+        <img id="sleep" class="shopart" src="bl-images/sleep.jpeg" alt="Image of demo album In Sleep's cover art."/>
+       </a>
+       
+     <footer>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Kathleen Baker</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a> ~ 
+          <a href="disclaimer.html">Disclaimer / Privacy Notice</a> ~
+        </small></p>
+    </footer>
+    
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+	  document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

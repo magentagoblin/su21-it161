@@ -1,0 +1,12 @@
+section.citations {
+    width: 25%;
+    float: right;
+    margin-left: 1em;
+
+}
+section.accessibility {
+    width: 75%;
+    float: left;
+    margin-left: 1em;
+
+}

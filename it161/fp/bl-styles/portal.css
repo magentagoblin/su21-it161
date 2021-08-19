@@ -1,0 +1,270 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color:black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: plum; 
+    background: red;
+}
+
+/* h1 {
+    font-weight: normal;
+    margin: auto;
+    background-image: url("../bl-images/header.png");
+    text-indent: -9999px;
+    height: 180px;    
+    width: 975px;
+    white-space: nowrap;
+}
+*/
+div.wrapper {
+    background-color: plum;
+    overflow: auto;
+}
+
+/* home page article styles */
+article.blog {
+    background-color: rgb(134, 90, 120);
+    border: 0.3em solid rgb(172, 129, 194);
+    color: lightgrey;
+    margin: 1em 1em;
+    padding: 0.5em 0.5em;
+}
+
+article.blog h3.date {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+p {
+    margin: 1em 1em;
+}
+
+
+h2, h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+/* h2 subheader == home page call to action to listen to Seed */
+h2.subheader {
+    text-align: center;
+    color: #bb44bb;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2.page-header {
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(209, 150, 209);
+    color: #bb44bb;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0.5em 0em 1em 0em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+p.page-caption {
+    font-size:1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    width:80%;
+    color: lightgrey;
+    background-color: rgb(156, 116, 177);
+    border: 0.5em solid rgb(172, 129, 194);
+    padding: 0.5em 0.5em;
+}
+
+/* text links */
+a {
+    color:#be89be;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: rgb(185, 152, 201);
+    text-decoration: none;
+}
+/* making the top banner not highlight when hovering */
+a.topheader {
+    color:#774777;
+    text-decoration: none;
+}
+
+a:hover.topheader {
+    color: #774777;
+    background-color: rgb(185, 152, 201);
+    text-decoration: none;
+}
+div.iconlist {
+    position:fixed;
+    right: 10px;
+    top: 120px;
+    width: 8%;
+    height: auto;
+    background-color: rgb(185, 152, 201);
+}
+img.icon {
+    position: relative;
+    margin: 25% 25%;
+    width: 50%;
+    height: auto;
+    
+}
+
+
+/*art page styles */
+
+section.art {
+    margin-left:10%;
+    margin-top: 3em;
+    width: 80%;
+    background-color:rgb(156, 116, 177);
+}
+
+section.art img {
+    width:35%;
+    height:auto;
+    position: relative;
+    margin-left: 10%;
+    margin-top:10%;
+    border: 5px solid rgb(255, 255, 123);
+}
+
+
+/* about page styles */
+div.about {
+    margin-left:10%;
+    width:70%;
+    background-color: rgb(134, 90, 120);
+    border: 0.3em solid rgb(172, 129, 194);
+    height: 300px;
+}
+
+img.logo {
+    float:left;
+    width: 30%;
+    height: auto;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+p.about {
+    font-style:italic;
+    color:lightgrey;
+    background-color: rgb(134, 90, 120);
+}
+
+
+/* footer */
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    h1 {
+        font-weight: normal;
+        margin: auto;
+        background-image: url("../bl-images/header.png");
+        background-color: plum;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-indent: -9999px; /* hides "big leather" text */
+        height: 180px;    
+        width: 80%;
+        white-space: nowrap;
+    }
+    img.seed {
+        width: 50%;
+        margin-right: 1em;
+        position: relative;
+        left: 25%;
+    }
+
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        font-weight: normal;
+        margin: auto;
+        background-image: url("../bl-images/header.png");
+        background-color: plum;
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size:cover;
+        text-indent: -9999px; /* hides "big leather" text */
+        height: 180px;    
+        width: 90%;
+        white-space: nowrap;
+    }
+    
+    img.seed {
+        width: 50%;
+        margin-left: 1em;
+        position: relative;
+        left: 25%;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    div.wrapper {
+        width: 100%;
+    }
+    /* no image banner on mobile */
+    h1 {
+        font-weight: normal;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2em;
+        margin: auto;
+        width: auto;
+        background-color: plum;
+        padding: 1em 1em;
+        text-align: center;
+    }
+    
+    img.seed {
+        width: 100%;
+    }
+    /*art page styles */
+
+    section.art {
+        margin-left:10%;
+        margin-top: 3em;
+        width: 80%;
+        background-color:rgb(156, 116, 177);
+    }
+
+    section.art img {
+        width:70%;
+        height:auto;
+        position: relative;
+        margin-left: 15%;
+        margin-top:10%;
+        border: 5px solid rgb(255, 255, 123);
+}
+  
+}

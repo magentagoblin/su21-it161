@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Kathleen Baker's IT161 Portal Website</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="bl-styles/portal.css" />
+  <link rel="stylesheet" href="bl-styles/nav.css" />
+ </head>
+ <body>
+     <header>
+       <a class="topheader" href="index.html">
+         <h1>Big Leather</h1>
+        </a>
+     <nav class="topnav" id="myTopnav">
+      <a href="index.html" class="active">home</a>
+      <a href="music.html">music</a>
+      <a href="shop.html">shop</a>
+      <a href="art.html">gallery</a>
+      <a href="about.html">about page</a>
+      <a href="showschedule.html">show schedule</a>
+      <a href="contact.php">contact Big Leather</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+
+   <div class="iconlist">
+     <a href="https://www.instagram.com/_bigleather_/" target="_blank">
+       <img class="icon" src="bl-images/insta-logo.png" alt="Instagram icon"/>
+      </a>
+     <a href="https://bigleather.bandcamp.com/" target="_blank">
+       <img class="icon" src="bl-images/bc-logo.png" alt="BandCamp icon"/>
+      </a>
+     <a href="https://open.spotify.com/artist/6xF7J1fNTVVRgd7beuhwhL?si=8vDi4eqFTGakwZiLHBUkGA&dl_branch=1" target="_blank">
+       <img class="icon" src="bl-images/spotify-logo.png" alt="Spotify icon"/>
+      </a>
+   </div>  
+
+   <div class="wrapper">
+       
+      <h2 class="subheader"> &darr;&darr;Click here to buy our newest EP album, <em>Seed!</em>&darr;&darr;</h2>
+      <a href="https://bigleather.bandcamp.com/album/seed-ep" target="_blank">
+        <img class="seed" src="bl-images/seed.jpeg" alt="Image of Big Leather's newest EP album, Seed"/>
+      </a>
+       <article class="blog">
+         <h3 class="date">August 9, 2021</h3>
+         <h3>Big Leather plays at Syd's</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus scelerisque ligula interdum, dapibus justo vitae, gravida justo. Phasellus metus libero, ultrices vitae orci faucibus, sodales rutrum turpis. Mauris a velit a erat posuere mollis vitae euismod leo. Donec augue nibh, posuere sed sapien non, maximus dictum elit. Ut lorem orci, tempor at venenatis non, hendrerit quis nibh. Suspendisse pretium, nisi vitae feugiat ultricies, nibh tortor blandit velit, sed consequat nibh massa sed tortor. Nam interdum diam in convallis euismod.</p>
+        </article>
+        <article class="blog">
+          <h3 class="date">July 21, 2021</h3>
+         <h3>Beach day!</h3>
+         <p>Nulla scelerisque lectus mi, quis pulvinar elit volutpat nec. Integer efficitur ipsum eu malesuada maximus. Proin eget odio eu leo scelerisque ultricies. In blandit urna mi, iaculis venenatis nunc auctor quis. Duis mattis consequat diam, eu laoreet enim dictum ullamcorper. Morbi sit amet facilisis elit. In hac habitasse platea dictumst. Vivamus gravida posuere orci, euismod lobortis quam viverra ut.</p>
+        </article>
+        <article class="blog">
+          <h3 class="date">July 15, 2021</h3>
+         <h3>off to Alabama</h3>
+          <p>Sed nulla orci, tempus laoreet aliquet a, vestibulum convallis tortor. Sed massa lorem, tincidunt sed tellus sed, vulputate hendrerit dolor. Duis interdum metus quis sem fermentum, sed auctor augue molestie. Vestibulum ut eros aliquam, maximus lectus sit amet, interdum lorem. Morbi quis vehicula leo, vitae commodo neque. Mauris sed tincidunt libero. Duis eget eleifend dui. Etiam feugiat eros ut lacus accumsan accumsan. Proin in aliquet leo, at hendrerit arcu. Mauris eu turpis lacinia, ultrices enim eu, tempus libero.</p>
+       </article>
+       
+     <footer>
+      <p><small>&copy; 2021 by 
+          <a href="contact.php">Kathleen Baker</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a> ~ 
+          <a href="disclaimer.html">Disclaimer / Privacy Notice</a> ~
+        </small></p>
+    </footer>
+    
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+	  document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

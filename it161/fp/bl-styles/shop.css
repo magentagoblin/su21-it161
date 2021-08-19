@@ -1,0 +1,18 @@
+/* shop page album images  */
+
+img#seed-ep, img#bones, img#ribbon {
+    float: left;
+    margin-top: 2em;
+    margin-left: 20%;
+    width: 25%;
+    height: auto;
+    border:0.5em solid rgb(172, 129, 194);
+}
+img#night, img#sleep, img#dumb {
+    float: right;
+    margin-top:2em;
+    margin-right: 20%;
+    width: 25%;
+    height: auto;
+    border:0.5em solid rgb(172, 129, 194);
+}
